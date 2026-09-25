@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    --color-white1: #f5f5f3;
+    --color-black1: #262626;
+    --color-grey1: #767676;
+}
+
+*{
+    font-family: "DM Sans";
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.trans{
+    transition: all linear .3s;
+}
