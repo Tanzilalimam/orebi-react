@@ -26,6 +26,50 @@ menuData: [
         url: '/journal'
     },
 ],
+cateData: {
+    category: [
+        {
+            id: 1,
+            label: 'category-1',
+            url: ''
+        },
+        {
+            id: 2,
+            label: 'category-2',
+            url: ''
+        },
+        {
+            id: 3,
+            label: 'category-3',
+            url: ''
+        },
+        {
+            id: 4,
+            label: 'category-4',
+            url: ''
+        },
+        {
+            id: 5,
+            label: 'category-5',
+            url: ''
+        },
+  ],
+
+  profile: [
+    {
+        id: 1,
+        label: 'profile',
+        url: ''
+    },
+    {
+        id: 2,
+        label: 'dashboard',
+        url: ''
+    },
+  ]
+
+},
+
 footerData: {
     category: [
     {

@@ -1,20 +1,24 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 import Img from "../../ui/Img"
 import Para from "../../ui/Para"
 import Logo from '../../assets/img/logo.png'
 import dummyData from "../../dummy/data"
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
 
 const Nav = function(){
-let [path, setPath] = useState([location.pathname]);
-useEffect(function(){
-    function viewPath(){
-        // let path = location.pathname;
-        setPath(location.pathname);
-        console.log(setPath);
-    }
-    viewPath();
-}, [location.pathname]);
+// let location = useLocation();
+// let [path, setPath] = useState(location.pathname);
+// useEffect(function(){
+//     function viewPath(){
+//         setPath(location.pathname);
+//         console.log(setPath);
+//     }
+//     viewPath();
+// }, [location.pathname]);
+
+let path = useLocation();
+console.log(path.pathname);
+
     return(
         <section className="py-8">
             <div className="container">
@@ -27,11 +31,10 @@ useEffect(function(){
                         dummyData.menuData.map(function(item, index){
                             return(
                             <li key={index} className="list-none">
-                                <NavLink to={item.url}>
-                            <Para className={`text-grey1 hover:text-black1 trans ${item.url == path ? 'text-red-600' : 'text-black'}`} text={item.label}></Para>
-                                </NavLink>
+                            <NavLink to={item.url}>
+                            <Para className={`${item.url === path.pathname ? 'text-red-600 border-b-3 border-b-red-600' : 'text-grey1'}`} text={item.label}></Para>
+                            </NavLink>
                             </li>
-
                             )
                         })
                     }
