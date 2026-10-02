@@ -1,4 +1,5 @@
-import Login from "../../components/common/Login"
+import Login from "../../components/layouts/Login"
+
 const LoginIndex = function(){
 
     return(

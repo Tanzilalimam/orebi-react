@@ -5,7 +5,9 @@
 @theme{
     --color-white1: #f5f5f3;
     --color-black1: #262626;
+    --color-black2: #2b2b2b;
     --color-grey1: #767676;
+    --color-grey2: #6d6d60;
 }
 
 *{
