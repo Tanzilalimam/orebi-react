@@ -6,12 +6,14 @@ import AboutIndex from './pages/about/AboutIndex';
 import ContactIndex from './pages/contacts/ContactIndex';
 import ErrorPage from './components/common/ErrorPage';
 import LoginIndex from './pages/login/LoginIndex';
+import RegistrationIndex from './pages/registration/RegistrationIndex';
 
 const routerValue = createBrowserRouter(
 createRoutesFromElements(
   <>
     <Route element={<Rootlayout/>}>
       <Route path='/login' element={<LoginIndex/>}></Route>
+      <Route path='/registration' element={<RegistrationIndex/>}></Route>
       <Route path='/' element={<HomeIndex/>}></Route>
       <Route path='/about' element={<AboutIndex/>}></Route>
       <Route path='/shop' element={<ProductIndex/>}></Route>
