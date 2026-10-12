@@ -128,6 +128,39 @@ help: [
 ],
 },
 
+dashData: [
+    {
+        id: 1,
+        label: 'dashboard',
+        url: ''
+    },
+    {
+        id: 2,
+        label: 'others',
+        url: ''
+    },
+    {
+        id: 3,
+        label: 'downloads',
+        url: ''
+    },
+    {
+        id: 4,
+        label: 'addresses',
+        url: ''
+    },
+    {
+        id: 5,
+        label: 'account details',
+        url: ''
+    },
+    {
+        id: 6,
+        label: 'logout',
+        url: ''
+    },
+]
+
 }
 
 export default dummyData
