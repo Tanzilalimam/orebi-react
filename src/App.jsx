@@ -7,6 +7,8 @@ import ContactIndex from './pages/contacts/ContactIndex';
 import ErrorPage from './components/common/ErrorPage';
 import LoginIndex from './pages/login/LoginIndex';
 import RegistrationIndex from './pages/registration/RegistrationIndex';
+import DashRootlayout from './components/layouts/dashboard/DashRootlayout';
+import DashIndex from './components/pages/dashboard/DashIndex';
 
 const routerValue = createBrowserRouter(
 createRoutesFromElements(
@@ -20,6 +22,9 @@ createRoutesFromElements(
       <Route path='/contact' element={<ContactIndex/>}></Route>
     </Route>
       <Route path='*' element={<ErrorPage/>}></Route>
+      <Route element={<DashRootlayout/>}>
+        <Route path='/dashboard' element={<DashIndex/>}></Route>
+      </Route>
   </>
 )
 );

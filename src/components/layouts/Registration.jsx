@@ -224,7 +224,7 @@ useEffect(function(){
             <div>
             <BreadCrumb className='' text='sign up' roottext='home'></BreadCrumb>                
             <Para className={'mt-30 mb-15 w-161 text-grey2 text-sm leading-7.5'} text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the."></Para>
-            <div className="py-14 flex flex-col items-start gap-8 border-y-2 border-y-black/10">
+            <div className="py-14 flex flex-col items-start gap-8 border-y border-y-black/10">
                 <h2 className="text-black1 text-[39px] font-bold capitalize">personal info</h2>
                 <div className="flex items-center gap-15">
                     <div className="flex flex-col items-start gap-1">
@@ -263,7 +263,7 @@ useEffect(function(){
                     </div>
                     <div className="flex flex-col items-start gap-1">
                         <div className="text-black1 font-bold capitalize">telephone</div>
-                        <Input type="number" name="phone" placeholder="your phone number" className={`border-b ${
+                        <Input type="text" name="phone" placeholder="your phone number" className={`border-b ${
                             err.phone? 'border-b-red-600':'border-b-black/10'
                         }`} onChange={handleForm}></Input>
                         {err.phone && (
@@ -273,7 +273,7 @@ useEffect(function(){
                     </div>
                 </div>
             </div>
-            <div className="py-14 flex flex-col items-start gap-8">
+            <div className="py-14 flex flex-col items-start gap-8 border-t border-t-black/10">
                 <h2 className="text-black1 text-[39px] font-bold capitalize">new customer</h2>
                 <div className="flex items-center gap-15">
                     <div className="flex flex-col items-start gap-1">
@@ -344,11 +344,9 @@ useEffect(function(){
                         }
                     </div>
                 </div>
-                <div className="flex flex-col items-start gap-10 border-t border-t-black/10">
-
-                </div>
-                <h2 className="text-black1 text-[39px] font-bold capitalize">password</h2>
-                <div className="flex items-center gap-15">
+                <div className="my-15 flex flex-col items-start gap-10 border-y border-y-black/10">
+                    <h2 className="mt-12 text-black1 text-[39px] font-bold capitalize">password</h2>
+                    <div className=" mb-16 flex items-center gap-15">
                     <div className="flex flex-col items-start gap-1">
                         <div className="text-black1 font-bold capitalize">password</div>
                         <Input type="text" name="password" placeholder="password" className={`border-b ${
@@ -370,8 +368,19 @@ useEffect(function(){
                         )
                         }
                     </div>
+                    </div>
                 </div>
-
+                <div className="flex flex-col gap-5">
+                    <div className="text-grey1 text-sm flex items-center gap-3">
+                        <input type="checkbox" name="cbox" className="" />
+                        I've read and agree to the policy
+                    </div>
+                    <div className="text-grey1 text-sm flex items-center gap-4 capitalize">
+                        subscribe newsletter
+                        <input type="radio" name="radio" className="" />yes
+                        <input type="radio" name="radio" className="" />no
+                    </div>
+                </div>
                 <Btn className="bg-white hover:bg-black1 text-black2 hover:text-white" text={'sign in'} onclick={handleSign}></Btn>
             </div>
             </div>

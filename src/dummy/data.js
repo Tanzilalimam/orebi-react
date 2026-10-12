@@ -64,7 +64,7 @@ cateData: {
     {
         id: 2,
         label: 'dashboard',
-        url: ''
+        url: '/dashboard'
     },
   ]
 
