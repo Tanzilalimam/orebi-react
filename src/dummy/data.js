@@ -132,32 +132,32 @@ dashData: [
     {
         id: 1,
         label: 'dashboard',
-        url: ''
+        url: '/dashboard'
     },
     {
         id: 2,
         label: 'others',
-        url: ''
+        url: '/others'
     },
     {
         id: 3,
         label: 'downloads',
-        url: ''
+        url: '/downloads'
     },
     {
         id: 4,
         label: 'addresses',
-        url: ''
+        url: '/address'
     },
     {
         id: 5,
         label: 'account details',
-        url: ''
+        url: '/accntdtls'
     },
     {
         id: 6,
         label: 'logout',
-        url: ''
+        url: '/logout'
     },
 ]
 
