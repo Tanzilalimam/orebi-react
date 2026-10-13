@@ -9,6 +9,8 @@ import LoginIndex from './pages/login/LoginIndex';
 import RegistrationIndex from './pages/registration/RegistrationIndex';
 import DashRootlayout from './components/layouts/dashboard/DashRootlayout';
 import DashIndex from './components/pages/dashboard/DashIndex';
+import DownloadIndex from './components/pages/dashboard/DownloadIndex';
+import OthersIndex from './components/pages/dashboard/OthersIndex';
 
 const routerValue = createBrowserRouter(
 createRoutesFromElements(
@@ -24,6 +26,8 @@ createRoutesFromElements(
       <Route path='*' element={<ErrorPage/>}></Route>
       <Route element={<DashRootlayout/>}>
         <Route path='/dashboard' element={<DashIndex/>}></Route>
+        <Route path='/downloads' element={<DownloadIndex/>}></Route>
+        <Route path='/others' element={<OthersIndex/>}></Route>
       </Route>
   </>
 )
