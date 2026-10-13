@@ -1,9 +1,10 @@
+import Contact from "../../components/pages/contact/Contact"
 
 const ContactIndex = function(){
 
     return(
         <>
-        contact page
+        <Contact></Contact>
         </>
     )
 }
