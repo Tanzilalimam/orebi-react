@@ -1,8 +1,10 @@
 import BreadCrumb from "../../common/BreadCrumb"
 import dummyData from "../../../dummy/data"
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 
 const DashHome = function(){
+let path = useLocation();
+console.log(path.pathname);
 
     return(
         <section>
@@ -14,10 +16,10 @@ const DashHome = function(){
                     {
                       dummyData.dashData.map(function(item, index){
                         return(
-                                <li key={index} className="py-5 w-full text-grey1 text-base border-b border-black/20 capitalize cursor-pointer">
-                            <NavLink to={item.url}>
-                                {item.label}
-                            </NavLink>
+                                <li key={index} className={`${item.url === path.pathname ? 'text-blue-600 border-b border-blue-600' : 'text-grey1 border-b border-black/20'} py-5 w-full text-base capitalize cursor-pointer`}>
+                                <NavLink to={item.url}>
+                                    {item.label}
+                                </NavLink>
                                 </li>
                         )
                       })  
