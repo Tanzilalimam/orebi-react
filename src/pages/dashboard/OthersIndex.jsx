@@ -1,4 +1,4 @@
-import Others from "../../layouts/dashboard/others/Others"
+import Others from "../../components/layouts/dashboard/others/Others"
 
 const OthersIndex = function(){
 

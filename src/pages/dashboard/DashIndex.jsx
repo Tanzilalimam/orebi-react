@@ -1,4 +1,4 @@
-import Dash from "../../layouts/dashboard/dboard/Dash"
+import Dash from "../../components/layouts/dashboard/dboard/Dash"
 
 const DashIndex = function(){
 

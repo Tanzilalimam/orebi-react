@@ -1,4 +1,4 @@
-import Downloads from "../../layouts/dashboard/downloads/Downloads"
+import Downloads from "../../components/layouts/dashboard/downloads/Downloads"
 
 const DownloadIndex = function(){
 

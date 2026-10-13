@@ -8,9 +8,12 @@ import ErrorPage from './components/common/ErrorPage';
 import LoginIndex from './pages/login/LoginIndex';
 import RegistrationIndex from './pages/registration/RegistrationIndex';
 import DashRootlayout from './components/layouts/dashboard/DashRootlayout';
-import DashIndex from './components/pages/dashboard/DashIndex';
-import DownloadIndex from './components/pages/dashboard/DownloadIndex';
-import OthersIndex from './components/pages/dashboard/OthersIndex';
+import DashIndex from './pages/dashboard/DashIndex';
+import OthersIndex from './pages/dashboard/OthersIndex';
+import DownloadIndex from './pages/dashboard/DownloadIndex';
+import AddressesIndex from './pages/dashboard/AddressesIndex';
+import AccountDtlsIndex from './pages/dashboard/AccntDtlsIndex';
+import LogoutIndex from './pages/dashboard/LogoutIndex';
 
 const routerValue = createBrowserRouter(
 createRoutesFromElements(
@@ -28,6 +31,9 @@ createRoutesFromElements(
         <Route path='/dashboard' element={<DashIndex/>}></Route>
         <Route path='/downloads' element={<DownloadIndex/>}></Route>
         <Route path='/others' element={<OthersIndex/>}></Route>
+        <Route path='/address' element={<AddressesIndex/>}></Route>
+        <Route path='/accntdtls' element={<AccountDtlsIndex/>}></Route>
+        <Route path='/logout' element={<LogoutIndex/>}></Route>
       </Route>
   </>
 )
