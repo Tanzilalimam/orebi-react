@@ -78,7 +78,9 @@ let [logged, setLogged] = useState(true);
                             <MdLogin className="text-xl"/>
                         </NavLink>
                         }
+                        <NavLink to={'/cart'}>
                         <FaCartShopping className="text-xl"/>
+                        </NavLink>
                     </div>
                 </div>
             </div>
