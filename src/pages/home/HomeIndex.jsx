@@ -1,9 +1,10 @@
+import Banner from "../../components/pages/home/Banner"
 
 const HomeIndex = function(){
 
     return(
         <>
-        homepage
+        <Banner></Banner>
         </>
     )
 }
