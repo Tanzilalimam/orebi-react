@@ -1,3 +1,5 @@
+import Product from '../assets/img/goggle.png'
+
 let dummyData = {
 menuData: [
     {
@@ -158,6 +160,17 @@ dashData: [
         id: 6,
         label: 'logout',
         url: '/logout'
+    },
+],
+
+ cartProducts: [
+    {
+        id: 1,
+        img: Product,
+        label: 'goggle',
+        price: '$44.00',
+        quantity: 1,
+        total: '$44.00'
     },
 ]
 

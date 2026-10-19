@@ -8,7 +8,7 @@ const Banner = function(){
         <>
         <section className="py-12 bg-white2">
             <div className="container">
-                <div className="w-ful flex justify-around items-center">
+                <div className="w-full flex justify-around items-center">
                     <div className="flex flex-col items-start gap-7.5">
                         <h1 className="text-black1 text-5xl font-bold capitalize">final offer</h1>
                         <div className="text-grey3">Up to <span className="text-black1 text-[40px] font-bold">50%</span> sale for all funtime items</div>
