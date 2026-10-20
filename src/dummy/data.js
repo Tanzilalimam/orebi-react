@@ -1,3 +1,4 @@
+import BannerImg from '../assets/img/banner.png'
 import Product from '../assets/img/goggle.png'
 
 let dummyData = {
@@ -162,6 +163,36 @@ dashData: [
         url: '/logout'
     },
 ],
+
+ banner: [
+    {
+        id: 1,
+        h1: 'final offer',
+        span1: 'up to',
+        span2: '50%',
+        txt: 'sale for all funtime items',
+        title: 'banner 3',
+        img: BannerImg
+    },
+    {
+        id: 2,
+        h1: 'final offer',
+        span1: 'up to',
+        span2: '50%',
+        txt: 'sale for all funtime items',
+        title: 'banner 3',
+        img: BannerImg
+    },
+    {
+        id: 3,
+        h1: 'final offer',
+        span1: 'up to',
+        span2: '50%',
+        txt: 'sale for all funtime items',
+        title: 'banner 3',
+        img: BannerImg
+    },
+ ],
 
  cartProducts: [
     {

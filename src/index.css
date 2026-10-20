@@ -24,3 +24,15 @@
 .trans{
     transition: all linear .3s;
 }
+/* .slick-slide > div{
+    width: 100% !important;
+    background-color: red !important;
+} */
+.banner-content{
+    width: 100%;
+    /* background-color: lightblue; */
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+}
+/* bg-amber-300 flex justify-between items-center gap-65 */
