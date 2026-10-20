@@ -1,3 +1,4 @@
+import { useState } from "react";
 // import Slider from "react-slick";
 import SliderComponent from "react-slick"
 const Slider = SliderComponent.default || SliderComponent;
@@ -9,21 +10,65 @@ import Btn from "../../../ui/Btn"
 
 
 const Banner = function(){
+let [dotActive, setDotActive] = useState(0);
+
  let settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    beforeChange: function(current, next){
+        setDotActive(next);
+    },
+    appendDots: dots => (
+      <div
+        style={{    
+            width: '0px',
+            backgroundColor: "#ddd",
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'column',
+            gap: '30px',
+            position: "absolute",
+            top: '40%',
+            left: "5%",
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
+     customPaging: i => (
+      <div
+        style={
+            i === dotActive
+            ?
+            {
+                paddingRight: '10px',
+                width: "30px",
+                color: "#262626",
+                borderRight: "5px solid #262626",
+            }
+            :
+            {
+                paddingRight: '10px',
+                width: "30px",
+                color: "transparent",
+                borderRight: "5px solid #f5f5f3",
+            }
+        }
+      >
+        0{i + 1}
+      </div>
+    ),
   };
-  console.log("Slider:", Slider);
-console.log("Img:", Img);
-console.log("Btn:", Btn);
 
     return(
         <>
         <section className="py-12 bg-white2">
             <div className="container">
+            <div className=" relative">
             <Slider {...settings}>
                 {
                 dummyData.banner.map(function(item, index){
@@ -43,6 +88,7 @@ console.log("Btn:", Btn);
                     })
                 }
             </Slider>
+            </div>
             </div>
         </section>
                 <div className='mb-10 py-5.5 px-39.75 bg-white border-b border-b-white1 flex justify-between items-center'>
