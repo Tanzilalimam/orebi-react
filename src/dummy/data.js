@@ -1,5 +1,9 @@
 import BannerImg from '../assets/img/banner.png'
 import Product from '../assets/img/goggle.png'
+import Cupclock from '../assets/img/cupclock.png'
+import Smartwatch from '../assets/img/smartwatch.png'
+import Basket from '../assets/img/basket.png'
+import Plushy from '../assets/img/plushy.png'
 
 let dummyData = {
 menuData: [
@@ -203,7 +207,38 @@ dashData: [
         quantity: 1,
         total: '$44.00'
     },
-]
+],
+
+ newArrivals: [
+    {
+        id: 1,
+        img: Cupclock,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+    {
+        id: 2,
+        img: Smartwatch,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+    {
+        id: 3,
+        img: Basket,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+    {
+        id: 4,
+        img: Plushy,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+ ]
 
 }
 

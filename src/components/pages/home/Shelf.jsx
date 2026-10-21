@@ -12,7 +12,7 @@ const Shelf = function(){
                 <div className="flex items-center gap-12.5">
                     <div className="relative">
                         <Img src={Lamps} alt='lamps'></Img>
-                        <div className="absolute bottom-14 left-16.75">
+                        <div className="absolute bottom-14 left-10">
                         <BreadCrumb2 title={'phones sale'} span1={'up to'} span2={'30%'} text={'sale for all phones!'}></BreadCrumb2>
                         </div>
                     </div>
