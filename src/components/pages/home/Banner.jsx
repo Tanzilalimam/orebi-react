@@ -91,11 +91,6 @@ let [dotActive, setDotActive] = useState(0);
             </div>
             </div>
         </section>
-                <div className='mb-10 py-5.5 px-39.75 bg-white border-b border-b-white1 flex justify-between items-center'>
-                    <div>2 years waranty</div>
-                    <div>2 years waranty</div>
-                    <div>2 years waranty</div>
-                </div>
         </>
     )
 }
