@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dummyData from '../../../dummy/data'
 import Img from '../../../ui/Img'
-import Btn from "../../../ui/Btn"
 import BreadCrumb2 from "../../common/BreadCrumb2";
 
 
