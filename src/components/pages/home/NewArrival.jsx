@@ -94,40 +94,35 @@ import "slick-carousel/slick/slick-theme.css";
 import { NavLink } from "react-router-dom";
 import dummyData from "../../../dummy/data";
 import Img from "../../../ui/Img";
-
+import { FaRightLong } from "react-icons/fa6";
+import { FaLeftLong } from "react-icons/fa6";
 
 function SampleNextArrow(props) {
 
-    const { className, style, onClick } = props;
+    const { onClick } = props;
 
     return (
-        <div
-            className={className}
-            style={{
-                ...style,
-                display: "block",
-                background: "red",
-            }}
+        <button
             onClick={onClick}
-        />
+            className="absolute right-0 top-1/2 -translate-y-1/2 text-grey1 flex justify-center items-center hover:text-black1 trans"
+        >
+            <FaRightLong className="text-2xl" />
+        </button>
     );
 }
 
 
 function SamplePrevArrow(props) {
 
-    const { className, style, onClick } = props;
+    const { onClick } = props;
 
     return (
-        <div
-            className={className}
-            style={{
-                ...style,
-                display: "block",
-                background: "green",
-            }}
+        <button
             onClick={onClick}
-        />
+            className="absolute left-0 top-1/2 -translate-y-1/2 text-grey1 flex justify-center items-center hover:text-black1 trans"
+        >
+            <FaLeftLong className="text-2xl" />
+        </button>
     );
 }
 
@@ -135,7 +130,7 @@ function SamplePrevArrow(props) {
 const NewArrival = function () {
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -171,7 +166,7 @@ const NewArrival = function () {
                                             to={item.url}
                                         >
 
-                                            <div className="px-3">
+                                            <div className="px-12">
 
                                                 <div className="flex flex-col items-start gap-3">
 
