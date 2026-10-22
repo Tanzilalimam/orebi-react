@@ -4,6 +4,14 @@ import Cupclock from '../assets/img/cupclock.png'
 import Smartwatch from '../assets/img/smartwatch.png'
 import Basket from '../assets/img/basket.png'
 import Plushy from '../assets/img/plushy.png'
+import Vase from '../assets/img/vase.png'
+import Bag from '../assets/img/bag.png'
+import Grinder from '../assets/img/grinder.png'
+import Bag2 from '../assets/img/bag2.png'
+import Cap from '../assets/img/cap.png'
+import Table from '../assets/img/table.png'
+import Hphone from '../assets/img/hphone.png'
+import Goggle from '../assets/img/goggle.png'
 
 let dummyData = {
 menuData: [
@@ -238,7 +246,69 @@ dashData: [
         color: 'black',
         url: '/product'
     },
- ]
+ ],
+
+ bestSeller: [
+    {
+        id: 1,
+        img: Vase,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+    {
+        id: 2,
+        img: Bag,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+    {
+        id: 3,
+        img: Grinder,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+    {
+        id: 4,
+        img: Bag2,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+ ],
+
+ specialOffer: [
+    {
+        id: 1,
+        img: Cap,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+    {
+        id: 2,
+        img: Table,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+    {
+        id: 3,
+        img: Hphone,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+    {
+        id: 4,
+        img: Goggle,
+        label: 'basic crew neck tee',
+        color: 'black',
+        url: '/product'
+    },
+ ],
 
 }
 
