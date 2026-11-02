@@ -91,11 +91,10 @@ const Slider = SliderComponent.default || SliderComponent;
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { NavLink } from "react-router-dom";
 import dummyData from "../../../dummy/data";
-import Img from "../../../ui/Img";
 import { FaRightLong } from "react-icons/fa6";
 import { FaLeftLong } from "react-icons/fa6";
+import ProductCard from "../../common/ProductCard";
 
 function SampleNextArrow(props) {
 
@@ -141,69 +140,28 @@ const NewArrival = function () {
         prevArrow: <SamplePrevArrow />,
     };
 
-
     return (
         <section className="my-25">
-
             <div className="container">
-
                 <div className="flex flex-col items-start gap-12">
-
                     <h2 className="text-black1 text-4xl font-bold capitalize">
                         new arrival
                     </h2>
-
-
                     <div className="w-full">
-
                         <Slider {...settings}>
-
                             {
-                                dummyData.newArrivals.map(function (item) {
-
-                                    return (
-
-                                        <NavLink
-                                            key={item.id}
-                                            to={item.url}
-                                        >
-
-                                            <div className="px-12">
-
-                                                <div className="flex flex-col items-start gap-3">
-
-                                                    <Img
-                                                        src={item.img}
-                                                        alt="pic"
-                                                    />
-
-                                                    <h3 className="text-black1 text-xl font-bold capitalize">
-                                                        {item.label}
-                                                    </h3>
-
-                                                    <p className="text-grey1 capitalize">
-                                                        {item.color}
-                                                    </p>
-
-                                                </div>
-
-                                            </div>
-
-                                        </NavLink>
-
-                                    );
-
-                                })
+                            dummyData.newArrivals.map(function (item) {
+                                return (
+                                    <div className="px-12">
+                                    <ProductCard key={item.id} item={item} />
+                                    </div>
+                                );
+                            })
                             }
-
                         </Slider>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
     );
 };
