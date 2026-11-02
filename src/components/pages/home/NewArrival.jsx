@@ -104,7 +104,7 @@ function SampleNextArrow(props) {
     return (
         <button
             onClick={onClick}
-            className="absolute right-0 top-1/2 -translate-y-1/2 text-grey1 flex justify-center items-center hover:text-black1 trans"
+            className="absolute right-0 top-1/2 -translate-y-1/2 text-grey1 flex justify-center items-center hover:text-black1 z-20 trans"
         >
             <FaRightLong className="text-2xl" />
         </button>
@@ -119,7 +119,7 @@ function SamplePrevArrow(props) {
     return (
         <button
             onClick={onClick}
-            className="absolute left-0 top-1/2 -translate-y-1/2 text-grey1 flex justify-center items-center hover:text-black1 trans"
+            className="absolute left-0 top-1/2 -translate-y-1/2 text-grey1 flex justify-center items-center hover:text-black1 z-20 trans"
         >
             <FaLeftLong className="text-2xl" />
         </button>
@@ -132,6 +132,8 @@ const NewArrival = function () {
     const settings = {
         dots: false,
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         slidesToShow: 3,
         slidesToScroll: 1,
 

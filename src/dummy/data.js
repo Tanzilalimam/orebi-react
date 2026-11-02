@@ -11,7 +11,7 @@ import Bag2 from '../assets/img/bag2.png'
 import Cap from '../assets/img/cap.png'
 import Table from '../assets/img/table.png'
 import Hphone from '../assets/img/hphone.png'
-import Goggle from '../assets/img/goggle.png'
+import Grande from '../assets/img/grande.png'
 
 let dummyData = {
 menuData: [
@@ -303,7 +303,7 @@ dashData: [
     },
     {
         id: 4,
-        img: Goggle,
+        img: Grande,
         label: 'basic crew neck tee',
         color: 'black',
         url: '/product'
