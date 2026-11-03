@@ -12,6 +12,10 @@ import Cap from '../assets/img/cap.png'
 import Table from '../assets/img/table.png'
 import Hphone from '../assets/img/hphone.png'
 import Grande from '../assets/img/grande.png'
+import Fbasket from '../assets/img/fbasket.png'
+import Grande2 from '../assets/img/grande2.png'
+import Hphone2 from '../assets/img/hphone2.png'
+import Table2 from '../assets/img/table2.png'
 
 let dummyData = {
 menuData: [
@@ -307,6 +311,25 @@ dashData: [
         label: 'basic crew neck tee',
         color: 'black',
         url: '/product'
+    },
+ ],
+
+ shelf: [
+     {
+        id: 1,
+        img: Fbasket
+    },
+     {
+        id: 2,
+        img: Grande2
+    },
+     {
+        id: 3,
+        img: Hphone2
+    },
+     {
+        id: 4,
+        img: Table2
     },
  ],
 
