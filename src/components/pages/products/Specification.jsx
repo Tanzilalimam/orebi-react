@@ -2,13 +2,12 @@ import { useEffect, useState } from "react"
 import Btn from "../../../ui/Btn"
 import Star from "../../common/Star"
 import { GrPowerReset } from "react-icons/gr";
-import { IoMdAdd } from "react-icons/io";
 
 const Specification = function(){
-let [show, setShow] = useState(0);
+let [count, setCount] = useState(0);
 
 function incr(){
-    setShow(function(prev){
+    setCount(function(prev){
     if(prev<20){
         return prev+1;
     }
@@ -19,7 +18,7 @@ function incr(){
     })
 }
 function dcr(){
-    setShow(function(prev){
+    setCount(function(prev){
     if(prev>0){
         return prev-1;
     }
@@ -30,11 +29,11 @@ function dcr(){
     })
 }
 function reset(){
-    setShow(0);
+    setCount(0);
 }
 useEffect(function(){
-    console.log(show);
-}, [show])
+    console.log(count);
+}, [count]);
 
     return(
         <section className="my-15">
@@ -69,9 +68,9 @@ useEffect(function(){
                         </div>
                         <div className="flex items-center gap-5">
                         <span className='text-lg font-bold capitalize'>quantity: </span>
-                        <Btn text={`+`} className="bg-green-600 text-white disabled:bg-grey1 disabled:cursor-not-allowed" onclick={incr} disabled={show===20}></Btn>
-                        <span className='text-black1 text-lg font-bold'>{show}</span>
-                        <Btn text={`-`} className="bg-red-600 text-white text-2xl disabled:bg-grey1 disabled:cursor-not-allowed" onclick={dcr} disabled={show===0}></Btn>
+                        <Btn text={`+`} className="bg-green-600 text-white disabled:bg-grey1 disabled:cursor-not-allowed" onclick={incr} disabled={count===20}></Btn>
+                        <span className='text-black1 text-lg font-bold'>{count}</span>
+                        <Btn text={`-`} className="bg-red-600 text-white text-2xl disabled:bg-grey1 disabled:cursor-not-allowed" onclick={dcr} disabled={count===0}></Btn>
                         <div className="py-4 px-10 hover:bg-blue-600 hover:text-white text-lg font-semibold border border-black trans cursor-pointer" onClick={reset}>
                         <GrPowerReset />
                         </div>
@@ -87,18 +86,6 @@ useEffect(function(){
                     <div className="flex items-center gap-5">
                         <Btn className="hover:bg-black hover:text-white" text={`add to wish list`}></Btn>
                         <Btn className="hover:bg-black hover:text-white" text={`add to cart`}></Btn>
-                    </div>
-                    </div>
-                    <div className="pb-5 w-full flex flex-col gap-4 border-b border-b-black/20">
-                    <div className="flex justify-between items-center gap-5">
-                        <span className="text-lg font-bold uppercase">features & details </span>
-                        <IoMdAdd className="text-xl"/>
-                    </div>
-                    </div>
-                    <div className="pb-5 w-full flex flex-col gap-4 border-b border-b-black/20">
-                    <div className="flex justify-between items-center gap-5">
-                        <span className="text-lg font-bold uppercase">features & details </span>
-                        <IoMdAdd className="text-xl"/>
                     </div>
                     </div>
                 </div>
