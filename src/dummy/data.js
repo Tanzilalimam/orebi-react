@@ -333,6 +333,24 @@ dashData: [
     },
  ],
 
+ reviews: [
+    {
+        id: 1,
+        name: 'jhon dough',
+        mess: 'Good. My wife loved it.'
+    },
+    {
+        id: 2,
+        name: 'rahim ali',
+        mess: 'Average. Could be better if tried a bit harder.'
+    },
+    {
+        id: 3,
+        name: 'karim mia',
+        mess: 'Nice. Looks more premium and asthetic than pic.'
+    },
+ ]
+
 }
 
 export default dummyData
