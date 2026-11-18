@@ -1,6 +1,7 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Rootlayout from './components/layouts/Rootlayout';
 import HomeIndex from './pages/home/HomeIndex';
+import ShopIndex from './pages/shop/ShopIndex';
 import ProductIndex from './pages/products/ProductsIndex';
 import AboutIndex from './pages/about/AboutIndex';
 import ContactIndex from './pages/contacts/ContactIndex';
@@ -25,7 +26,8 @@ createRoutesFromElements(
       <Route path='/registration' element={<RegistrationIndex/>}></Route>
       <Route path='/' element={<HomeIndex/>}></Route>
       <Route path='/about' element={<AboutIndex/>}></Route>
-      <Route path='/shop' element={<ProductIndex/>}></Route>
+      <Route path='/shop' element={<ShopIndex/>}></Route>
+      <Route path='/products' element={<ProductIndex/>}></Route>
       <Route path='/contact' element={<ContactIndex/>}></Route>
       <Route path='/cart' element={<CartIndex/>}></Route>
       <Route path='/checkout' element={<CheckoutIndex/>}></Route>
