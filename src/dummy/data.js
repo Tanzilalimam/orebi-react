@@ -227,28 +227,28 @@ dashData: [
         img: Cupclock,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
     {
         id: 2,
         img: Smartwatch,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
     {
         id: 3,
         img: Basket,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
     {
         id: 4,
         img: Plushy,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
  ],
 
@@ -258,28 +258,28 @@ dashData: [
         img: Vase,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
     {
         id: 2,
         img: Bag,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
     {
         id: 3,
         img: Grinder,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
     {
         id: 4,
         img: Bag2,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
  ],
 
@@ -289,28 +289,28 @@ dashData: [
         img: Cap,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
     {
         id: 2,
         img: Table,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
     {
         id: 3,
         img: Hphone,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
     {
         id: 4,
         img: Grande,
         label: 'basic crew neck tee',
         color: 'black',
-        url: '/product'
+        url: '/products'
     },
  ],
 
