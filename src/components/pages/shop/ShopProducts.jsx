@@ -26,7 +26,7 @@ const ShopProducts = function(){
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {
-            dummyData.newArrivals.slice(0,3).map(function(item){
+            dummyData.specialOffer.slice(0,3).map(function(item){
                 return(
                         <ProductCard key={item.id} item={item} />
                         )
@@ -35,7 +35,7 @@ const ShopProducts = function(){
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {
-            dummyData.newArrivals.slice(0,3).map(function(item){
+            dummyData.combinedOffer.slice(0,3).map(function(item){
                 return(
                         <ProductCard key={item.id} item={item} />
                         )

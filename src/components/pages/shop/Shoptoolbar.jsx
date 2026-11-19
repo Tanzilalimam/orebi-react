@@ -21,11 +21,15 @@ const [sortBy, setSortBy] = useState('featured');
 
 function handleSort(e){
     console.log(e.target.value);
-    setSortBy(e.target.value);
+    console.log(setSortBy(e.target.value));
 }
 
 // 3. show product quantity
-const [quan, setQuan] = useState(12);
+const [showQuan, setShowQuan] = useState(12);
+
+function handleQuan(e){
+    console.log(setShowQuan(Number(e.target.value)));
+}
 
     return(
         <>
@@ -49,7 +53,7 @@ const [quan, setQuan] = useState(12);
                     {
                         [0,1,2,3].map((index)=>{
                             return(
-                                <option key={index} value="" className="text-grey1 capitalize">12</option>
+                                <option key={index} value="" className="text-grey1 capitalize" onChange={handleQuan}>{showQuan}</option>
                             )
                         })
                     }

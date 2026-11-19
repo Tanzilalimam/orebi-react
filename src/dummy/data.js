@@ -374,6 +374,57 @@ dashData: [
     },
  ],
 
+ combinedOffer: [
+        {
+        id: 1,
+        img: Grande2,
+        label: 'goggle',
+        color: 'black',
+        brand: 'brand 1',
+        price: 44.00,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
+        url: '/products'
+    },
+    {
+        id: 2,
+        img: Bag,
+        label: 'basic crew neck tee',
+        color: 'black',
+        brand: 'brand 1',
+        price: 44.00,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
+        url: '/products'
+    },
+    {
+        id: 3,
+        img: Grinder,
+        label: 'basic crew neck tee',
+        color: 'black',
+        brand: 'brand 1',
+        price: 44.00,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
+        url: '/products'
+    },
+    {
+        id: 4,
+        img: Grande,
+        label: 'basic crew neck tee',
+        color: 'black',
+        brand: 'brand 1',
+        price: 44.00,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
+        url: '/products'
+    },
+ ],
+
  shelf: [
      {
         id: 1,
