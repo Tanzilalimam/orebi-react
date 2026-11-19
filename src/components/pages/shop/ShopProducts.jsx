@@ -5,37 +5,37 @@ const ShopProducts = function(){
 
     return(
         <>
-        <div className="flex flex-col items-start gap-15">
-            <div className="flex items-center gap-10">
+        <div className="flex flex-col items-start gap-18">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {
-            dummyData.bestSeller.map(function(item){
+            dummyData.bestSeller.slice(0,3).map(function(item){
                 return(
                         <ProductCard key={item.id} item={item} />
                         )
                     })
             }
             </div>
-            <div className="flex items-center gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {
-            dummyData.newArrivals.map(function(item){
+            dummyData.newArrivals.slice(0,3).map(function(item){
                 return(
                         <ProductCard key={item.id} item={item} />
                         )
                     })
             }
             </div>
-            <div className="flex items-center gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {
-            dummyData.newArrivals.map(function(item){
+            dummyData.newArrivals.slice(0,3).map(function(item){
                 return(
                         <ProductCard key={item.id} item={item} />
                         )
                     })
             }
             </div>
-            <div className="flex items-center gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {
-            dummyData.newArrivals.map(function(item){
+            dummyData.newArrivals.slice(0,3).map(function(item){
                 return(
                         <ProductCard key={item.id} item={item} />
                         )

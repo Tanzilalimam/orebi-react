@@ -227,6 +227,11 @@ dashData: [
         img: Cupclock,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
     {
@@ -234,6 +239,11 @@ dashData: [
         img: Smartwatch,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
     {
@@ -241,6 +251,11 @@ dashData: [
         img: Basket,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
     {
@@ -248,6 +263,11 @@ dashData: [
         img: Plushy,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
  ],
@@ -258,6 +278,11 @@ dashData: [
         img: Vase,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
     {
@@ -265,6 +290,11 @@ dashData: [
         img: Bag,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
     {
@@ -272,6 +302,11 @@ dashData: [
         img: Grinder,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
     {
@@ -279,6 +314,11 @@ dashData: [
         img: Bag2,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
  ],
@@ -289,6 +329,11 @@ dashData: [
         img: Cap,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
     {
@@ -296,6 +341,11 @@ dashData: [
         img: Table,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
     {
@@ -303,6 +353,11 @@ dashData: [
         img: Hphone,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
     {
@@ -310,6 +365,11 @@ dashData: [
         img: Grande,
         label: 'basic crew neck tee',
         color: 'black',
+        brand: 'brand 1',
+        price: 44,
+        category: 'category 1',
+        discount: 0,
+        isNew: true,
         url: '/products'
     },
  ],
