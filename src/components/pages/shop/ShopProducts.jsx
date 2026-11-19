@@ -88,7 +88,7 @@ let visibleProducts = products.slice(0, showQuan);
             }
             </div>
             </div> */}
-            <div className={view==='grid' ? `w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5` : `w-full flex flex-col gap-8`}>
+            <div className={view==='grid' ? `w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-18 gap-x-7` : `w-full flex flex-col gap-8`}>
                 {
                     visibleProducts.map((item)=>{
                         return(
