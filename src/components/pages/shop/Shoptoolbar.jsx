@@ -61,7 +61,7 @@ function handleQuan(e){
             </div>
         </div>
         <div>
-        <ShopProducts></ShopProducts>
+        <ShopProducts view={view} sortBy={sortBy} showQuan={showQuan}></ShopProducts>
         </div>
         </div>
         </>
