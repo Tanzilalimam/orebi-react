@@ -11,7 +11,10 @@ const ProductCard = function({item}){
         <NavLink to={item.url}>
         <div className="group flex flex-col items-start gap-3 relative">
             <Img src={item.img} alt='pic'></Img>
+            <div className="pr-5 w-full flex justify-between items-center gap-0">
             <h3 className="text-black1 text-xl font-bold capitalize">{item.label}</h3>
+            <span className="text-grey1 font-bold">${item.price}</span>
+            </div>
             <p className="text-grey1 capitalize">{item.color}</p>
         <div className="absolute top-96 left-0 z-10 bg-white p-5 w-full flex flex-col items-end gap-4 trans opacity-0 group-hover:opacity-100 group-hover:top-[40%]">
             <div className="flex items-center gap-2.5">
