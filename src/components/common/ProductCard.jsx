@@ -9,8 +9,8 @@ const ProductCard = function({item, view}){
     return(
         <>
         <NavLink to={item.url}>
-        <div className={`group w-full flex relative ${view==='grid' ? 'flex-col items-start gap-3' : 'flex-row items-center gap-10'}`}>
-            <Img src={item.img} alt={item.label} className={view==='grid' ? 'w-fulll aspect-square object-contain' : 'w-40 aspect-square object-contain'}></Img>
+        <div className={`group w-full bg-blue-200 flex relative ${view==='grid' ? 'flex-col items-start gap-3' : 'flex-row items-center gap-10'}`}>
+            <Img src={item.img} alt={item.label} className={view==='grid' ? 'w-full aspect-square object-contain' : 'w-40 aspect-square object-contain'}></Img>
             <div className="pr-5 w-full flex justify-between items-center gap-5">
             <h3 className="text-black1 text-xl font-bold capitalize">{item.label}</h3>
             <span className="text-grey1 font-bold">${item.price}</span>
